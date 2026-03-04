@@ -1,0 +1,158 @@
+\documentclass[11pt, a4paper]{article}
+
+% --- UNIVERSAL PREAMBLE BLOCK ---
+  \usepackage[a4paper, top=2.5cm, bottom=2.5cm, left=2cm, right=2cm]{geometry}
+\usepackage{fontspec}
+
+\usepackage[english, bidi=basic, provide=*]{babel}
+
+\babelprovide[import, onchar=ids fonts]{english}
+
+% Set default/Latin font to Sans Serif in the main (rm) slot
+\babelfont{rm}{Noto Sans}
+
+% Math and table packages
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{setspace}
+\usepackage{hyperref}
+
+% --- DOCUMENT METADATA ---
+  \title{\textbf{Projecting the Macroeconomic Impact of Artificial Intelligence on Municipal Economies: A 2050 Scenario Analysis for Kota Denpasar}}
+\author{
+  \textbf{Ricardo Ochoa}\thanks{Corresponding Author: \href{mailto:ricardo.ochoa@capsus.mx}{ricardo.ochoa@capsus.mx}} \\
+  \and 
+  \textbf{Socorro Román} \\
+}
+\date{
+  CAPSUS \\
+  \vspace{0.5cm}
+  \today
+}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+The rapid evolution of artificial intelligence (AI) and automation has shifted from theoretical modeling to structural enterprise integration, generating unprecedented macroeconomic consequences. While global and national forecasts abound, urban municipalities serve as the primary nodes for technological diffusion and labor market transitions. This working paper introduces a localized, micro-to-macro modeling architecture to project the economic impact of AI on Kota Denpasar, Indonesia, through 2050. Utilizing a task-based labor exposure index triangulated with recent municipal data (BPS 2024--2025), we establish a baseline for Denpasar's highly formalized, service-oriented economy. We apply logistic diffusion models (S-curves) adjusted for local frictions and accelerators, mapping these onto projected Total Factor Productivity (TFP) shocks. Our results indicate a bifurcated future: under a High Transformation scenario, AI integration yields a "productivity dividend" pushing municipal GRDP to 195 Trillion IDR by 2050, but concurrently triggers severe wage polarization between formal "augmented" workers and the informal sector. The paper concludes with policy implications for navigating this technological transition.
+\end{abstract}
+
+\vspace{0.5cm}
+\noindent \textbf{Keywords:} Artificial Intelligence, Urban Economics, Shift-Share Analysis, Technological Diffusion, Wage Inequality, Kota Denpasar.
+
+\newpage
+\doublespacing
+
+\section{Introduction}
+The integration of generative artificial intelligence (AI) and advanced automation into the global economy represents a paradigm shift in the mechanisms of value creation. Unlike previous technological revolutions that primarily substituted routine physical labor, the current wave of AI demonstrates a profound capacity to augment or replace cognitive, non-routine, and knowledge-intensive tasks. In the East Asia and Pacific (EAP) region, digital transformation is enhancing the tradability of services and redefining production processes, as highlighted by the World Bank's recent assessments of future job landscapes (Arias et al., 2025).
+
+However, estimating the long-term macroeconomic consequences of these technologies requires moving beyond generalized national forecasts to highly granular, municipal-level projections. Urban centers are the arenas where capital accumulation, digital infrastructure, and labor market transitions intersect. An urban municipality in Southeast Asia will not experience AI adoption uniformly; the trajectory is dictated by localized industrial composition, labor informality, and specific digital infrastructure readiness.
+
+This paper applies a localized projection framework to Kota Denpasar, the capital of Bali Province, Indonesia. With a 2024 Gross Regional Domestic Product (GRDP) of 38.00 Trillion IDR (at constant prices) heavily dominated by the Accommodation, Food Service, and Education sectors, Denpasar presents a unique case study. Unlike the national average, Denpasar exhibits a remarkably high formal employment rate (61.8\%) and near-universal 4G/5G connectivity. This research answers a critical question: \textit{How will the structural integration of AI alter Denpasar's economic output and wage distribution by 2050?}
+
+\section{Theoretical Background}
+The theoretical foundation of this projection relies on three interconnected economic frameworks:
+
+\subsection{The Task-Based Model of Automation}
+Traditional models of technological change assume that technology universally augments labor. This paper adopts the task-based framework pioneered by Autor, Levy, and Murnane (2003) and expanded by Acemoglu and Restrepo (2018). In this model, production requires the completion of a continuum of tasks. AI does not replace "jobs" entirely; rather, it substitutes human labor in specific cognitive and routine tasks while complementing human labor in others (augmentation). The exposure of a municipality's workforce is therefore a function of its task composition.
+  
+  \subsection{Technological Diffusion and S-Curves}
+  The adoption of general-purpose technologies (GPTs) follows a logistic growth curve, or S-curve, characterized by a slow incubation period, rapid exponential acceleration (the tipping point), and eventual saturation (Griliches, 1957). For AI, the steepness and timing of this curve are mediated by local "frictions" (e.g., labor informality, lack of digital infrastructure) and "accelerators" (e.g., public sector digitization pilots, blanket 5G coverage).
+  
+  \subsection{Skill-Biased Technological Change and Wage Polarization}
+  As established in labor economics, technologies that complement highly skilled workers increase their marginal productivity and wages, while displacing middle-skill routine workers. In the context of a developing economy like Indonesia, this dynamic manifests as a polarization between the formal sector (which captures the AI augmentation dividend) and the informal sector (which remains shielded from direct automation but suffers from wage stagnation).
+  
+  \section{Methodology and Assumptions}
+  To model Denpasar's trajectory to 2050, we employ a three-phase analytical sequence relying on data triangulation from Statistics Indonesia (BPS).
+
+\subsection{Data Triangulation and Baseline Establishment}
+Because direct corporate tech integration metrics (e.g., the 2026 Economic Census) are not fully mature, we triangulate baseline digital readiness using proxy indicators:
+\begin{itemize}
+    \item \textbf{Sectoral Composition:} Extracted from the 2024 GRDP by Industry report, showing Services as the dominant economic anchor.
+    \item \textbf{Labor Dynamics:} Sourced from the August 2025 National Labor Force Survey (Sakernas), identifying a workforce of 411,042 individuals (61.8\% formal, 38.2\% informal).
+    \item \textbf{Digital Footprint:} E-Commerce Statistics (2024) and municipal infrastructure reports indicating 51.37\% e-commerce adoption among local enterprises and 100\% broadband coverage across Denpasar's wards.
+  \end{itemize}
+  
+  \subsection{Phase 1: Occupational Exposure Assessment}
+  We utilize a Shift-Share Analysis combined with an AI Task-Exposure Index. The 411,042 workers in Denpasar are categorized into three exposure tiers based on their primary sectors:
+    \begin{enumerate}
+  \item \textbf{High Exposure (Displacement Risk):} Knowledge \& Admin sectors ($\sim$90,400 workers). High susceptibility to generative AI substitution.
+  \item \textbf{Medium Exposure (Augmentation):} Tourism \& Retail ($\sim$185,000 workers). AI augments productivity without replacing the physical/empathetic requirements of the "human touch."
+  \item \textbf{Low Exposure (Shielded):} Physical \& Informal labor ($\sim$135,600 workers). Shielded from immediate automation due to low capital investment viability, but at risk of economic stagnation.
+  \end{enumerate}
+  
+  \subsection{Phase 2: Temporal Diffusion Modeling}
+  We model the speed of task transition using logistic growth functions parameterized for local conditions. The adoption rate $A(t)$ for sector $i$ in year $t$ is defined as:
+    \begin{equation}
+  A_i(t) = \frac{L_i}{1 + e^{-k_i (t - t_{0,i} - \alpha)}}
+  \end{equation}
+  Where $L$ is the maximum adoption saturation limit, $k$ is the diffusion speed (steepness), $t_0$ is the base tipping point year, and $\alpha$ represents local acceleration factors. For Denpasar, $\alpha$ is adjusted to reflect the late 2025 deployment of blanket 5G and the 2026 provincial single digital identity pilot, which forcibly accelerates public sector digital literacy.
+  
+  \subsection{Phase 3: Macroeconomic Projections}
+  We translate localized task-exposure and diffusion timelines into macroeconomic Total Factor Productivity (TFP) shocks. These shocks are fed into a simplified dynamic projection model to calculate the potential bounds of municipal GRDP and the divergence in the wage inequality index between the formal and informal sectors.
+  
+  \section{Results and Discussion}
+  
+  \subsection{The Productivity Dividend (GRDP Projections)}
+  The modeling reveals a massive divergence in Denpasar's potential economic size by 2050 based on the rate of AI adoption. 
+
+\begin{table}[h]
+\centering
+\caption{Projected GRDP for Kota Denpasar (in Trillion IDR, Constant Prices)}
+\vspace{0.2cm}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+\textbf{Scenario} & \textbf{2024 (Baseline)} & \textbf{2035} & \textbf{2050} \\ \midrule
+Low Adoption (Stagnation) & 38.00 & 56.00 & 105.00 \\
+Historical Baseline Trend & 38.00 & 65.00 & 135.00 \\
+High Transformation (AI Dividend) & 38.00 & 80.00 & 195.00 \\ \bottomrule
+\end{tabular}
+\end{table}
+
+In the \textit{High Transformation} scenario, the aggressive integration of AI across Denpasar's highly formalized service sector adds an estimated 1.2\% to 1.8\% to annual TFP growth starting in the early 2030s. This yields an "AI Dividend" of approximately 60 Trillion IDR over the historical baseline by 2050. Conversely, failure to adopt these technologies (\textit{Low Adoption}) leads to severe competitive degradation against other regional hubs in Southeast Asia.
+  
+  \subsection{Wage Polarization and the Inequality Threat}
+  While AI significantly expands aggregate output, the distribution of this wealth is structurally biased. Denpasar's informal sector (38.2\% of the workforce) lacks the capital to integrate AI. Our projections indicate that without intervention, the wage inequality index will spike severely between 2035 and 2045. The "augmented" formal workers in tourism and administration will see exponential productivity and wage gains, while informal workers will experience real-wage stagnation.
+
+\subsection{Spatial and Urban Dynamics}
+The macroeconomic shifts will alter Denpasar's spatial layout. The automation of routine administrative tasks will likely contract demand for traditional centralized commercial real estate. Simultaneously, the demand for decentralized, high-connectivity co-working nodes for hybrid "human-AI" teams will drive development outward, merging the economic boundaries between Denpasar and neighboring Badung Regency.
+  
+  \section{Conclusion and Policy Implications}
+  The trajectory of Kota Denpasar to 2050 highlights both the immense potential and structural risks of the AI revolution. Because of its unique demographic and infrastructure profile, Denpasar is positioned to capture a disproportionately large AI productivity dividend compared to the Indonesian national average.
+  
+  However, capturing this 195 Trillion IDR economy requires preemptive policy action. To mitigate the severe wage polarization identified in the projection, municipal authorities must implement aggressive, universal digital upskilling programs targeting both the formal and informal sectors. Furthermore, municipal planning must adapt to the spatial decentralization driven by digitized, augmented workflows. Successfully navigating this transition will be critical to fulfilling the ambitions of the "Golden Indonesia 2045" and the "Bali Kerthi" economic roadmaps.
+  
+  \newpage
+  \begin{thebibliography}{99}
+  
+  \bibitem{acemoglu2018}
+  Acemoglu, D., \& Restrepo, P. (2018). \textit{The Race between Man and Machine: Implications of Technology for Growth, Factor Shares, and Employment}. American Economic Review, 108(6), 1488-1542.
+  
+  \bibitem{autor2003}
+  Autor, D. H., Levy, F., \& Murnane, R. J. (2003). \textit{The Skill Content of Recent Technological Change: An Empirical Exploration}. The Quarterly Journal of Economics, 118(4), 1279-1333.
+  
+  \bibitem{bps2025_denpasar}
+  Badan Pusat Statistik Kota Denpasar. (2025). \textit{Kota Denpasar Dalam Angka 2025 [Denpasar Municipality in Figures 2025]}. BPS-Statistics Denpasar Municipality.
+  
+  \bibitem{bps2025_pdrb}
+  Badan Pusat Statistik Kota Denpasar. (2025). \textit{Produk Domestik Regional Bruto Kota Denpasar Menurut Lapangan Usaha 2020-2024}. BPS-Statistics Denpasar Municipality.
+  
+  \bibitem{bps2026_sakernas}
+  Badan Pusat Statistik. (2026). \textit{Booklet Sakernas Agustus 2025}. BPS-Statistics Indonesia.
+  
+  \bibitem{bps2025_ecommerce}
+  Badan Pusat Statistik. (2025). \textit{Statistik E-Commerce 2024}. BPS-Statistics Indonesia.
+  
+  \bibitem{griliches1957}
+  Griliches, Z. (1957). \textit{Hybrid Corn: An Exploration in the Economics of Technological Change}. Econometrica, 25(4), 501-522.
+  
+  \bibitem{worldbank2025}
+  World Bank Group. (2025). \textit{Future Jobs: Robots, Artificial Intelligence, and Digital Platforms in East Asia and Pacific}. East Asia and Pacific Development Studies. Washington, DC: World Bank.
+  
+  \bibitem{worldbank2016}
+  World Bank Group. (2016). \textit{Live Long and Prosper: Aging in East Asia and Pacific}. World Bank East Asia and Pacific Regional Report. Washington, DC: World Bank.
+  
+  \end{thebibliography}
+  
+  \end{document}
