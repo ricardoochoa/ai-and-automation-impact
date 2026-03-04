@@ -22,7 +22,7 @@ To understand why, we mapped Denpasar's economic baseline using the latest 2024-
 Because of this, AI isn't just coming to Denpasar; it's going to arrive *fast*.
 
 *Figure 1:* Denpasar's workforce categorized by AI exposure risk based on 2024 BPS data.
-![](img/Denpasar_Phase1_Exposure.png)<!-- -->
+![](animation/img/Denpasar_Phase1_Exposure.png)<!-- -->
 
 ## **Who Gets Replaced, Who Gets Upgraded, and Who Gets Left Behind?**
 
@@ -31,7 +31,7 @@ AI doesn't replace entire jobs; it replaces *tasks*. By breaking down the daily 
 The animation below illustrates how quickly AI tasks will integrate into these three tiers over time. Notice how local infrastructure accelerators (like Denpasar's blanket 5G coverage) shift the adoption tipping point earlier for knowledge and tourism workers, while physical laborers remain unimpacted by digital acceleration.
 
 *Figure 2:* Animated S-Curve models showing how local digital infrastructure accelerates AI task integration.
-![](img/Denpasar_Phase2_SCurves_Animated.gif)<!-- -->
+![](animation/img/Denpasar_Phase2_SCurves_Animated.gif)<!-- -->
 
 ### **1\. The "Displacement Risk" Tier (\~90,400 Workers)**
 
@@ -60,7 +60,7 @@ Currently, Denpasar’s Gross Regional Domestic Product (GRDP) sits at roughly 3
 The animated projection below demonstrates these diverging economic trajectories. Notice how the 'High Transformation' scenarios pull significantly ahead of the baseline around the early 2030s: **GRDP could surge to 205 Trillion IDR by 2050**. That extra wealth is the "AI Dividend"—a massive injection driven by the hyper-productivity of the "Augmented" workforce.
 
 *Figure 3: Animated projection of Denpasar's GRDP across different macroeconomic and policy scenarios.*
-![](img/Denpasar_Phase3_GRDP_Animated.gif)<!-- -->
+![](animation/img/Denpasar_Phase3_GRDP_Animated.gif)<!-- -->
 
 Furthermore, this wealth will physically reshape the city. As routine administrative tasks are automated, the demand for giant centralized office buildings will shrink. Instead, expect to see decentralized, highly connected "co-working nodes" for human-AI teams spreading outward toward the Badung Regency borders.
 
@@ -73,7 +73,7 @@ AI is a wedge that will ruthlessly divide the formal and informal economies. As 
 Our animated models show that without government intervention, the wage inequality index between the formal and informal sectors will spike severely between 2035 and 2045\. As the animation below shifts from the 'No Policy' to the 'With Policy' scenario, watch how aggressive intervention successfully flattens this dangerous curve.
 
 *Figure 4:* Animated wage inequality index. The city becomes richer on paper, but vastly more unequal on the streets without structural policy intervention.
-![](img/Denpasar_Phase3_Inequality_Animated.gif)<!-- -->
+![](animation/img/Denpasar_Phase3_Inequality_Animated.gif)<!-- -->
 
 ## **The Choice for 2050**
 
