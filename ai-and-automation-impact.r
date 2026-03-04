@@ -203,9 +203,9 @@ print(plot_phase3_grdp)
 print(plot_phase3_ineq)
 
 # Optional: To save the plots as high-resolution images, uncomment the lines below:
-# ggsave("Denpasar_Phase1_Exposure.png", plot_phase1, width = 8, height = 5, dpi = 300)
-# ggsave("Denpasar_Phase2_SCurves.png", plot_phase2, width = 8, height = 5, dpi = 300)
-# ggsave("Denpasar_Phase3_GRDP.png", plot_phase3_grdp, width = 8, height = 5, dpi = 300)
-# ggsave("Denpasar_Phase3_Inequality.png", plot_phase3_ineq, width = 8, height = 5, dpi = 300)
+ggsave("img/Denpasar_Phase1_Exposure.png", plot_phase1, width = 8, height = 5, dpi = 300)
+ggsave("img/Denpasar_Phase2_SCurves.png", plot_phase2, width = 8, height = 5, dpi = 300)
+ggsave("img/Denpasar_Phase3_GRDP.png", plot_phase3_grdp, width = 8, height = 5, dpi = 300)
+ggsave("img/Denpasar_Phase3_Inequality.png", plot_phase3_ineq, width = 8, height = 5, dpi = 300)
 
 cat("Modeling complete. To test other outcomes, change the User Parameters at the top of the script.\n")
